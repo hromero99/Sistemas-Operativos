@@ -1,3 +1,9 @@
 # Practicas de Sistemas Operativos
 
-* Practica 1 --> Procesos
+Repositorio con los ejercicios de la asignatura Sistemas Operativos.
+
+## Resumen de contenidos
+
+  * Creación de procesos ( proccess_exercises )
+  * Creación de hilos ( thread_exercises )
+  * Algoritmos de planificación
