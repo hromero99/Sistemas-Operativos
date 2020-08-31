@@ -14,7 +14,10 @@ void execute_program(char* program, char** arguments){
       exit(EXIT_FAILURE);
     case 0:
       printf("Soy el proceso %d, con padre %d\n", getpid(),getppid());
-      execvp(program, arguments);
+      if ( execvp(program, arguments) < 0 ){
+        printf("Error en la ejecucion del programa %s, errno %d\n", program,errno);
+        exit(EXIT_FAILURE);
+      }
       exit(0);
   }
 }
